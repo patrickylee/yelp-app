@@ -1,5 +1,10 @@
+html {
+  height:100%
+}
+
 body {
   margin:0;
+  height:100%;
 }
 
 img {
@@ -10,6 +15,9 @@ img {
 #darkerredContainer {
   background-color:#bb2226;
   height:24px;
+  border:none;
+  outline:none;
+
 }
 
 #redContainer {
@@ -20,6 +28,7 @@ img {
 #darkerredContainer2 {
   background-color:#bb2226;
   height:20px;
+
 }
 
 #whiteContainer {
@@ -28,19 +37,19 @@ img {
   outline:none;
   border:none;
   background-color:white;
-  border-top-left-radius:10px;
-  border-bottom-left-radius:10px;
+  border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
 }
 
 #findLabel {
-  margin-left:10px;
-  font-size:15px;
+  margin-left:-15px;
+  font-size:14px;
   font-family:"Helvetica-Bold";
 }
 
 #mainInputSearch {
   height:34px;
-  font-size:15px;
+  font-size:13.5px;
   font-family:"Helvetica";
 
   placholder-color:black;
@@ -52,14 +61,14 @@ img {
 
 #nearLabel {
   padding-left:100px;
-  font-size:15px;
+  font-size:14px;
   font-family:"Helvetica-Bold";
 }
 
 #locationInputSearch {
   width:300px;
   height:34px;
-  font-size:15px;
+  font-size:13.5px;
   font-family:"Helvetica";
   outline:none;
   border:none;
@@ -90,10 +99,40 @@ img {
 #lowerGreyContainer {
   height:100px;
   background-color:#f5f5f5;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 #lowerGreyContainer {
   padding-top:40px;
+}
+
+#displayResultsArea {
+}
+
+#footer {
+  margin-top:40%;
+  background-color:#f5f5f5;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10rem;
+  text-align: center;
+
+}
+
+li {
+  list-style-type:none;
+  color:#1074b9;
+  font-size: 14px;
+  font-family:"Helvetica";
+  margin-top:5px;
+}
+
+ul {
+  text-align: left;
+  color:#d1262b;
+  font-size: 16px;
+  font-family:"Helvetica-Bold";
 }
 
 #restaurantNameHolder {
@@ -119,6 +158,7 @@ img {
   height:35px;
   border-radius:6px;
   outline:none;
+  border: 1px solid #cccccc;
 }
 
 #openNow {
@@ -127,6 +167,8 @@ img {
   outline:none;
   font-family:"Helvetica";
   font-size:14px;
+  border: 1px solid #cccccc;
+
 }
 
 #allFilters {
@@ -139,7 +181,10 @@ img {
 
 #resultsContainerContainer {
   padding:30px;
-  text-align: center;
+  margin-left:100px;
+  text-align: left;
+  display:"block";
+  margin-bottom:-100px;
 }
 
 #resultsContainer {
@@ -147,20 +192,72 @@ img {
   padding:50px;
 }
 
-#results-mainInfo {
-  margin-top:80px;
+#results-image {
+  width:100px;
+  height:100px;
   float:left;
   font-family:"Helvetica";
   font-size:16px;
+  margin-top:55px;
+}
+
+#results-mainInfo {
+  margin-left:40px;
+  margin-top:80px;
+  float:left;
+  font-family:"Helvetica";
+  font-size:15px;
+  text-align:left;
+}
+
+#results-mainInfo-name {
+  font-size: 18px;
+  color:black;
+}
+
+#results-mainInfo-name a {
+  text-decoration: none;
+  color:#1074bd;
+}
+
+
+#results-mainInfo-categories {
+  color:#1074b9;
+}
+
+#results-mainInfo-rating {
+  color: #fd924c;
+}
+
+#results-mainInfo-reviews {
+  color: #666666;
 }
 
 #results-location {
   margin-top:80px;
-
-  margin-left:80px;
+  margin-left:160px;
   float:left;
   font-family:"Helvetica";
-  font-size:16px;
+  font-size:14.3px;
+  text-align:left;
+}
+
+#footerContainer {
+}
+
+#footerFirstSection {
+  display:inline-block;
+  margin-right:100px;
+  vertical-align: top;
+}
+
+#footerSecondSection {
+  display:inline-block;
+  margin-right:100px;
+}
+
+#footerThirdSection {
+  display:inline-block;
 }
 
 input {
